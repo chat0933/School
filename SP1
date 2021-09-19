@@ -1,1 +1,156 @@
+//a
 
+
+Die[] Dice= new Die[5];
+int die[] = {6};
+DiceCup[] Cup = new DiceCup[6];
+
+int nums[] = {0, 1, 2, 3, 4, 6};
+int rand = int(random(nums.length));
+int x1;
+int X = 75;
+int Y = 75;
+int SIZE = 60;
+color a = (255);
+color b = (30);
+
+
+color Invinsible = color(255);
+color numbers;
+
+
+
+void setup() {
+  size(450, 450);
+  for (int i = 0; i<Dice.length; i++) {
+    Dice[i] = new Die(color(b), color(a), X, Y, SIZE, SIZE);
+  }
+}
+
+void draw() {
+  background(255);
+  for (int i = 0; i< Dice.length; i ++ ) {
+    Dice[i].Draw(X, Y, SIZE);
+    Dice[i].roll(X, Y, SIZE);
+    Cup[i].addDie (Die die);
+  }
+}
+
+
+
+class Die {
+  float eyes; //give it 7 eyes
+  int X;
+  int Y;
+  int SIZE;
+  // Die color
+  color a;
+  // Eye color
+  color b;
+
+  //Constructor
+  Die(color b_, color a_, int xpos, int ypos, int Size_, float eyes_) {
+    a = a_;
+    b =b_;
+    X = xpos;
+    Y = ypos;
+    SIZE = Size_;
+    eyes = eyes_;
+  }
+
+  void Draw(int X, int Y, int  SIZE) {
+    background(255);
+    rectMode(CENTER);
+    stroke(0);
+    fill(a);
+    rect(X, Y, SIZE, SIZE);
+    // eyes
+    ellipseMode(CENTER);
+    //  fill (Invinsible);
+    //  ellipse(X+10, Y+10, SIZE/5, SIZE/5); // top left
+    //  ellipse(X+10, Y+25, SIZE/5, SIZE/5); // middle left
+    // ellipse(X+10, Y+40, SIZE/5, SIZE/5); //bottom left
+    //  ellipse(X+25, Y+25, SIZE/5, SIZE/5); //middle
+    //  ellipse(X+40, Y+10, SIZE/5, SIZE/5);  // Top right
+    // ellipse(X+40, Y+25, SIZE/5, SIZE/5); // middle right
+    //  ellipse(X+40, Y+40, SIZE/5, SIZE/5); //bottom right
+  }
+
+  public void roll(int X, int Y, int  SIZE  ) {
+
+    for (int i = 0; i <int(random(1, 7)); i++) {
+      i = int(random(1, 7));
+      i=i++;
+      println(i);
+      noLoop();
+      if (i==1) {
+        fill (color(b));
+        ellipse(X, Y, SIZE/5, SIZE/5); //middle;
+      }
+      if (i==2) {
+        fill (color(b));
+        ellipse(X+15, Y-15, SIZE/5, SIZE/5);  // Top right
+        ellipse(X-15, Y+15, SIZE/5, SIZE/5); //bottom left
+      }
+      if (i ==3) {
+        fill (color(b));
+        ellipse(X+15, Y-15, SIZE/5, SIZE/5);  // Top right
+        ellipse(X, Y, SIZE/5, SIZE/5); //middle;
+        ellipse(X-15, Y+15, SIZE/5, SIZE/5); //bottom left
+      }
+      if (i==4) {
+        fill  (color(b));
+         ellipse(X+15, Y-15, SIZE/5, SIZE/5);  // Top right
+        ellipse(X+15, Y+15, SIZE/5, SIZE/5); //bottom right
+        ellipse(X-15, Y-15, SIZE/5, SIZE/5); // top left
+        ellipse(X-15, Y+15, SIZE/5, SIZE/5); //bottom left
+      }
+      if (i==5) {
+        fill (color(b));
+       ellipse(X+15, Y-15, SIZE/5, SIZE/5);  // Top right
+        ellipse(X+15, Y+15, SIZE/5, SIZE/5); //bottom right
+        ellipse(X, Y, SIZE/5, SIZE/5); //middle;
+        ellipse(X-15, Y-15, SIZE/5, SIZE/5); // top left
+        ellipse(X-15, Y+15, SIZE/5, SIZE/5); //bottom left
+      }
+      if (i==6) {
+        fill (color(b));
+        ellipse(X-15, Y-15, SIZE/5, SIZE/5); // top left
+        ellipse(X-15, Y, SIZE/5, SIZE/5); // middle left
+        ellipse(X-15, Y+15, SIZE/5, SIZE/5); //bottom left
+        ellipse(X+15, Y-15, SIZE/5, SIZE/5);  // Top right
+        ellipse(X+15, Y, SIZE/5, SIZE/5); // middle right
+        ellipse(X+15, Y+15, SIZE/5, SIZE/5); //bottom right
+      }
+      if (i==7) {
+        fill (Invinsible);
+      }
+    }
+  }
+}
+// b
+class DiceCup {
+  Die[] array;
+
+//onstructor
+DiceCup() {
+}
+//add Die  
+  void addDie(Die die)
+{
+  die=
+  }
+}
+
+  //void shake() {
+  //  for (int i = 0; i<Dice.length; i++)
+  //  {
+  //    Dice[i].roll();
+  //  }
+  //  }
+  //void draw(int,X,int,Y,int SIZE)
+
+
+
+
+  // c
