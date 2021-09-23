@@ -1,0 +1,193 @@
+Task 1
+//a
+class Main{
+	// b Write a function that prints an empty line  and call it from main		
+		public static void main(String	[] args){
+		System.out.println("");
+		String b1= "Hello";
+		System.out.println(b1);
+		String a1 = "Christian";
+		Integer age = 22 ;
+		System.out.println("My name is"); 
+		System.out.println(a1);
+		System.out.println("I am");
+		System.out.println(age);
+		System.out.println("years old");
+	}
+// c Write a function that receives a string as a parameter and prints it. call this function from main()
+//	void string1()	
+	{
+//		public static void(String	[] args){
+//		String b1 = "Hello";
+//		System.out.println("b1");
+//	}
+
+}
+
+} 
+
+
+
+
+//}
+
+// D
+//public void lines()	{
+//	string a= "Christian";
+//	int age = 22;
+// System.out.println("My name is +a, I am age years old")
+//}
+
+
+Task 2
+class Main{
+  public static boolean happy = true;
+ // int a = 33;
+ // int b = 24; 
+
+public static void main(String [] args) {
+   if (iAmHappy())
+   {
+     System.out.println("I clap my hands");
+
+ // String str = "can this get written in upper case?";
+ // String upper_str = str.toUpperCase();
+ //System.out.println("CAN THIS GET WRITTEN IN UPPER CASSE":+ upper_str);
+   }
+   else
+   {
+     System.out.println("I don't clap my hands"); 
+   }
+   {
+  
+}
+}
+
+//public static void main2(int a, int b) {
+//    int sum = a+b;
+//   }
+
+
+public static boolean iAmHappy()
+{
+  // fill out what is missing here: 
+   happy = true;
+   return true; 
+  // return a+b;
+  }
+}
+
+
+
+
+
+//public static boolean numbers = true;
+
+  //public static void main(String [] args){
+
+//}
+
+
+//public static boolean Correctnumbers()
+//{
+ //numbers = true;
+  // return true
+//{}
+//}
+
+
+Task 3:
+class Main
+{
+	
+		public static void main(String args[]){
+		Teacher a1 = new Teacher(tmpName, tmpage, tmpisFemale);
+		Student b1 = new Student(tmpname, tmpage, tmpisFemale, tmpdata);
+
+		System.out.println(a1);
+		System.out.println(b1);
+	}
+}
+	
+public class Teacher{
+	String name = "Tess";
+	String age ="??";
+	boolean isFemale = true;
+
+	public Teacher(String tmpname, String tmpage, boolean tmpisFemale)	{
+	name=tmpName;
+	age=tmpage;
+	isFemale=tmpisFemale;
+}
+}
+public class Student
+	{
+	String Name = "Christian";
+	int age = 22;
+	boolean isFemale = false;
+	String data = "DatamatikerTeamA";
+
+
+	// constructor;
+	Student(String tmpname, int tmpage, boolean tmpisFemale, String tmpdata)	{
+		name=tmpname;
+		age=tmpage;
+		isFemale=tmpisFemale;
+		data=tmpdata;
+	}
+//	
+	{
+String Name1 = Rasmus;
+	String age2 = "??"
+	boolean isFemale = false;
+}
+
+}
+
+Task 4
+
+import java.util.Arrays;
+
+class Main4{
+
+public static void main(String[] args) {
+	String[] myText = {"I can only count to four"};
+System.out.println(myText[0]);
+int[] myNum ={1,2,3,4};
+System.out.println(Arrays.toString(myNum));
+}
+boolean[] booleanArray;
+}
+
+Task 5:
+
+
+Task 6:
+/*
+ *
+ * Hvis du kompilerer programmet får du 7 fejl.
+ * Kan du fixe programmet så det kan køre og
+ * outputtet bliver:
+ * "7 is the smallest!"
+ *
+ * 
+ */
+public class Oops {
+  public static void main(String[] args) {
+    int a = 7, b = 42;
+    minimum(a,b);
+    if (smaller == a)  {
+      System.out.println("a is the smallest!");
+    }
+  }
+  public static void minimum(int a, int b) {
+    if (a < b) {
+      int smaller = a;
+    } else if (a > b) {
+      int smaller = b;
+    }
+    return int smaller;
+  }
+}
+
+// miss one more mistake
